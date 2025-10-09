@@ -21,7 +21,9 @@
                 </div>
 
                 <div class="flex gap-4 mt-6">
-                    <button [disabled]="quantity === quantityInCart" (click)="updateCart()" mat-flat-button class="match-input-height">
+                    <button (click)="updateCart()" mat-flat-button 
+                        [disabled]="quantity === quantityInCart" 
+                        class="match-input-height mb-5">
                         <mat-icon>shopping_cart</mat-icon>
                         {{getButtonText()}}
                     </button>
